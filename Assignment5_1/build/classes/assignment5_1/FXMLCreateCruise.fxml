@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #D5F3F4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5_1.FXMLCreateCruiseController">
+   <children>
+      <Button fx:id="btnCreate" layoutX="225.0" layoutY="337.0" mnemonicParsing="false" onAction="#buttonActionCreate" prefHeight="37.0" prefWidth="115.0" text="CreateCruise" textFill="#2b2bd0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <TextField fx:id="tfCruise" layoutX="283.0" layoutY="81.0" />
+      <Text layoutX="129.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CruiseID" />
+      <TextField fx:id="tfSa" layoutX="283.0" layoutY="129.0" />
+      <Text layoutX="130.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="sailing date" />
+      <Text layoutX="130.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="return date" />
+      <TextField fx:id="tfRa" layoutX="283.0" layoutY="179.0" />
+      <Text layoutX="130.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="departure position" />
+      <TextField fx:id="tfDp" layoutX="283.0" layoutY="231.0" />
+      <Text layoutX="129.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ship number Belonging" />
+      <TextField fx:id="tfShip" layoutX="283.0" layoutY="289.0" />
+      <Text fill="#1a526f" layoutX="86.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Use Cruise Management System" wrappingWidth="452.35074204206467">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

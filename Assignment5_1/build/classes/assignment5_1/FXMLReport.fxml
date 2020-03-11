@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="695.0" style="-fx-background-color: #D5F3F4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="assignment5_1.FXMLReportController">
+   <children>
+      <Button fx:id="btnChart" layoutX="401.0" layoutY="388.0" mnemonicParsing="false" onAction="#drawChart" prefHeight="37.0" prefWidth="162.0" text="Revenue Line Chart" textFill="#2b2bd0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Text layoutX="369.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="report" wrappingWidth="112.4000035226345">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="16.0" layoutY="60.0" prefHeight="294.0" prefWidth="663.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Revenue Report by country">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="663.0">
+                     <children>
+                        <TableView fx:id="tableview1" prefHeight="264.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn fx:id="tvcountry" prefWidth="337.20002365112305" text="country" />
+                            <TableColumn fx:id="tvprice1" minWidth="0.0" prefWidth="325.20001220703125" text="price" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Revenue report by age">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableview2" layoutX="1.0" layoutY="-1.0" prefHeight="265.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn fx:id="tvage" prefWidth="332.79999923706055" text="age" />
+                            <TableColumn fx:id="tvprice2" prefWidth="329.20001220703125" text="price" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Sailor supervisors report">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableview3" layoutX="1.0" layoutY="-2.0" prefHeight="267.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn fx:id="tvsailors" prefWidth="326.4000358581543" text="Sailors" />
+                            <TableColumn fx:id="tvsupervisors" prefWidth="335.5999755859375" text="Supervisors" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Passengers Report">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableview4" prefHeight="265.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn fx:id="tvpassengername" prefWidth="328.4000358581543" text="PassengerName" />
+                            <TableColumn fx:id="tvpricepayed" prefWidth="333.5999755859375" text="Price payed" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Evaluation Report">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableview5" prefHeight="268.0" prefWidth="663.0">
+                          <columns>
+                            <TableColumn fx:id="tvpassenger" prefWidth="326.0000114440918" text="Passenger Name" />
+                            <TableColumn fx:id="tvrate" prefWidth="336.0" text="Rate" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Text layoutX="203.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cruise" wrappingWidth="75.20005541294813">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="cruiseID4" layoutX="285.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="58.6734619140625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnReport" layoutX="141.0" layoutY="388.0" mnemonicParsing="false" onAction="#displayReport" prefHeight="37.0" prefWidth="144.0" text="Display Report" textFill="#2b2bd0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
